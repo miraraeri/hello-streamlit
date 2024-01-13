@@ -25,3 +25,9 @@ st.image(img, caption='Альтаир и Малик')
 if st.checkbox("Покажи/Убери"):
     st.text("Ты нажал на галочку. Вот текст!")
 
+status = st.radio("Выберите:", ('ДА', 'НЕТ'))
+if status == 'ДА':
+    st.success('ДА')
+else:
+    st.error('НЕТ')
+

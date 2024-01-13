@@ -8,8 +8,16 @@ st.header('Это заголовок.')
 st.subheader('А это подзаголовок.')
 st.text('Здесь можно писать текс. Например, "Привет".')
 st.markdown("This is a markdown") #не поняла эту функцию
+
 st.success('Плитка успеха (зеленая)')
 st.info('Плитка информации (синяя)')
 st.warning('Плитка предупреждения (желтая)')
 st.error('Плитка ошибка (красная)')
 st.info("пример")
+
+st.write('Текст с командой write. С помощью нее можно писать текст в формате кода.')
+st.write("Пример:", range(10))
+
+from PIL import Image
+img = Image.open("altair.jpg")
+st.image(img, caption='Альтаир и Малик')

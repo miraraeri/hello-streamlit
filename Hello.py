@@ -31,6 +31,10 @@ if status == 'ДА':
 else:
     st.error('НЕТ')
 
-characters = st.selectbox("Выберите персонажа: ", 
+character = st.selectbox("Выберите персонажа: ", 
                           ['Альтаир', 'Малик', 'Роберо'])
-st.write('Твой персонаж: ', characters)
+st.write('Твой персонаж: ', character)
+
+characters = st.multiselect("Выберите персонажа (можно несколько): ",
+                            ['Альтаир', 'Малик', 'Роберо'])
+st.write(f"Вы выбрали {len(characters)} персонажей.")

@@ -31,3 +31,6 @@ if status == 'ДА':
 else:
     st.error('НЕТ')
 
+characters = st.selectbox("Выберите персонажа: ", 
+                          ['Альтаир', 'Малик', 'Роберо'])
+st.write('Твой персонаж: ', characters)

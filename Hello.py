@@ -41,3 +41,8 @@ st.write(f"Вы выбрали {len(characters)} персонажей.")
 
 if st.button("Нажми кнопку"):
     st.text("Молодец, возьми с полки пирожок)")
+
+name = st.text_input("Введите имя", "Нажмите здесь")
+if st.button('Потвердить'):
+    result = name.title()
+    st.info(result)

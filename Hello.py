@@ -49,3 +49,9 @@ def run():
 
 if __name__ == "__main__":
     run()
+
+df = pd.DataFrame({
+  'first column': [1, 2, 3, 4],
+  'second column': [10, 20, 30, 40]
+})
+st.write(df)

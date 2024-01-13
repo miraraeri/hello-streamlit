@@ -21,3 +21,7 @@ st.write("Пример:", range(10))
 from PIL import Image
 img = Image.open("altair.jpg")
 st.image(img, caption='Альтаир и Малик')
+
+if st.checkbox("Покажи/Убери"):
+    st.text("Ты нажал на галочку. Вот текст!")
+
